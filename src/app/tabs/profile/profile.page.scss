@@ -100,4 +100,19 @@ ion-content{
 
     }
   }
+  .photo-grid{
+    margin:8px 5px 10px 5px;
+    padding:0;
+    border-radius:20px;
+    ion-col{
+      padding:2px;
+    }
+    .image-container{
+      background-size: cover;
+      min-height:100px;
+    }
+  }
+  .noPadding{
+    padding:0;
+  }
 }
