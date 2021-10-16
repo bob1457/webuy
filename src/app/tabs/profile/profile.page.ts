@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { OptionComponent } from './option/option.component';
 
 @Component({
   selector: 'app-profile',
@@ -13,7 +15,7 @@ export class ProfilePage implements OnInit {
   buttonItems = [];
   posts = [];
 
-  constructor() { }
+  constructor(private modalCtlr: ModalController) { }
 
   ngOnInit() {
 
@@ -58,6 +60,16 @@ export class ProfilePage implements OnInit {
   buttonsChanged(event) {
     console.log(event.detail.value);
     this.buttonValue = event.detail.value;
+  }
+
+  async option( ){
+    const options = {
+      component: OptionComponent,
+      cssClass: 'custom-modal',
+      swipeToClose: true, // ios only
+    };
+    const modal = await this.modalCtlr.create(options);
+    await modal.present();
   }
 
 }
