@@ -1,0 +1,97 @@
+ion-content{
+  --ion-background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.background-img{
+  height:100vh;
+  width:100%;
+  background: url('../../assets/images/background_pc-signup.png');
+  background-position: 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.shape{
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  img {
+    opacity: 0.9;
+  }
+}
+
+.bg-filter{
+  height:100%;
+  width: 100%;
+  background: rgba(255,255,255,0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+ion-card{
+  text-align: center;
+  margin-top:0px;
+  background-color: transparent;
+  box-shadow: none;
+  ion-card-title{
+    color: #242020;
+    font: size 30px;
+  }
+}
+
+ion-card-content{
+  margin-top:40px;
+
+  ion-item{
+    align-items: center;
+    --ion-item-background: transparent;
+    --border-width:0;
+    --inner-border-width:0;
+    --highlight-color-focus: none;
+    margin-bottom: 10px;
+  }
+
+  ion-input{
+    width: 200px;
+    border-radius: 15px;
+    border: 1px solid #198645;
+    font-size: 14px;
+    font-weight: 300;
+    color:#555B5B;
+    --padding-start:10px;
+  }
+
+  a{
+    text-decoration: none;
+    color:#589B3F;
+    font-weight: 300;
+    font-size: 13px;
+  }
+
+}
+
+
+.bottom-section{
+    align-items: center;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+    ion-button{
+      width:200px;
+      height: 50px;
+      --border-radius: 15px;
+      --background:#275C3C;
+      color:#FFFFFF;
+      font-weight:400;
+      text-transform: uppercase;
+    }
+
+    span{
+      font-size: .8rem;
+      margin-top: 10px;
+    }
+  }
