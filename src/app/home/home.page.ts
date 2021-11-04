@@ -7,6 +7,19 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  options = {
+    slidesPerView: 1.5,
+    centered: true,
+    spaceBetweenView:10
+  };
+
+  sliderOptions = {
+    initialSlide: 0,
+    slidesPerView: 1,
+    speed:400
+  };
+
+
   constructor() {}
 
 }

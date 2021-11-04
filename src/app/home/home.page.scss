@@ -1,27 +1,320 @@
-#container {
-  text-align: center;
+// .header-ios .main-toolbar{
+//   --background:transparent !important;
+//   --border-width: 0 !important;
+//   height: 80px !important;
+//   --min-height: 105px !important;
+//   margin: 0;
+// }
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
+// .header-md ion-title{
+//   padding-inline-start: 0;
+//   font-family: Montserrat_Regular;
+//   font-weight: 200;
+//   padding-left: 30px;
+//   color:#E5E5E5;
+//   font-size:12px;
+// }
+
+
+// .header-md .main-toolbar{
+//   --background:transparent !important;
+//   --border-width: 0 !important;
+//   height: 80px !important;
+//   --min-height: 105px !important;
+//   margin-left: 0;;
+//   margin: 0;
+// }
+
+// .header-ios, .header-md ion-title{
+//   padding-inline-start: 0;
+//   font-family: Montserrat_Regular;
+//   font-weight: 200;
+//   padding-left: 10px;
+//   color: #E5E5E5;
+//   font-size:12px
+// }
+
+// .small-toolbar{
+//   --background:transparent !important;
+//   text-align: right !important;
+//   margin-left: 20px;
+// }
+
+//  .small-toolbar .icon{
+//   font-size:20px;
+//   color:grey;
+// }
+
+// .title-toolbar{
+//   text-align:left;
+//   padding-left: 50px;
+//   font-family: Arial, Helvetica, sans-serif;
+//   font-weight:400;
+//   font-style: normal;
+//   font-size: 20px;
+//   color:rgb(95, 94, 94, .75);
+// }
+
+// .title-toolbar .title{
+//   font-family: Arial, Helvetica, sans-serif;
+//   font-size: 20px;
+//   font-weight:700;
+//   // font-style: normal;
+//   color:#3F9B99;
+// }
+
+// .header-md{
+//   .title-toolbar{
+//     text-align:left;
+//     padding-left: 50px;
+//     font-family: Monsterrat;
+//     font-weight:200;
+//     font-style: normal;
+//   }
+// }
+
+// ion-title{
+//   // color:#999898;
+//   padding-inline-start: 0;
+//   font-family: Montserrat_Regular;
+//   font-weight: 200;
+//   padding-left: 10px;
+//   color: #E5E5E5;
+//   font-size:12px
+// }
+
+ion-content{
+  --background:#F4FAF6 !important;
+}
+.header-ios .main-toolbar{
+   --background:transparent !important;
+   --border-width:0 !important;
+   height:80px !important;
+   --min-height:125px !important;
+   margin: 0;
+
+
+}
+
+.header-md .main-toolbar{
+   --background:transparent !important;
+   --border-width:0 !important;
+   height:80px !important;
+   --min-height:135px !important;
+   margin: 0;
+   font-size: 14px;
+
+
+}
+
+.header-md ion-title{
+   padding-inline-start: 0;
+   font-family: Montserrat_Regular;
+   font-weight: 200;
+   padding-left: 30px;
+   color:#E5E5E5;
+   font-size:12px;
+}
+
+ion-title{
+   padding-inline-start: 0;
+   font-family: Montserrat_Regular;
+   font-weight: 200;
+   padding-left: 30px;
+   color:#d4d4d4;
+   font-size:12px;
+}
+
+.small-toolbar{
+   --background-color: transparent;
+   text-align:right;
+   margin-right: 20px;
+}
+
+.small-toolbar .icon{
+   font-size: 26px;
+   color: grey;
+}
+
+.header-md{
+   .title-toolbar{
+       text-align: left;
+       padding-left: 30px;
+       font-family: Montserrat;
+       font-weight: 200;
+       font-style: normal;
+   }
+
+   .title-toolbar .title{
+       font-family: 'Libre Baskerville';
+       font-size: 18px;
+       font-weight: 700;
+       color: #3F9B99;
+
+   }
+}
+
+.title-toolbar{
+   text-align: left;
+   padding-left: 30px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   font-style: normal;
+    position: absolute;
+    top: 6px;
+    color:#A79A9A
+}
+
+.title-toolbar .title{
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 18px;
+   font-weight: 700;
+   color: #3F9B99 !important;
+   margin-left: 5px;
+}
+
+
+//// styling up the content section //////////////////////////////////////////////////////////////////////////
+
+#container{
+
+   display:absolute;
+   left:0;
+   right: 0;
+   text-align:center;
+   transform: translateY(-50%);
+}
+
+////// Search bar section//////
+
+.searchbar{
+   padding:0px;
+   position:absolute;
+   left:0;
+   right: 0;
+   top:20%;
+   margin-top: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+
+ion-searchbar{
+   --box-shadow:none;
+   --border-radius:15px;
+  color:#c0bfbf;
+   //--background: #e6e6e6;
+   --background:#dddcdc;
+}
+
+// .searchbar-input.sc-ion-searchbar-ios
+// {
+//    --background: rgb(190, 190, 190) !important;
+// }
+
+
+///  main featured products section/////////////////////////////////////////////////
+
+#content{
+  display:absolute;
+  left:0;
+  right:0;
   transform: translateY(-50%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+// #content .searchbar{
+//   position:absolute;
+//   left:0;
+//   right: 0;
+//   top:20%;
+//   margin-top: 35px;
+// }
+
+main-featured-products{
+   color:#000 !important;
+    height: 100px;
+
+
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.searchbar{
+  --box-shadow: none;
+  --border-radius:15px;
 }
 
-#container a {
-  text-decoration: none;
+.searchbar-md .searchbar-input{
+  background:rgb(196, 196, 196) !important;
+}
+
+
+ion-slides{
+   --bullet-background: white;
+   --bullet-background-active: yellow;
+}
+
+.card-wrapper{
+   background: #F2BC54 !important;
+}
+
+.card-wrapper2{
+  background: #4583e0 !important;
+}
+
+.swiper-slide {
+   color:red;
+}
+
+.main-product-card{
+   background: #2E8B53;
+   border-radius: 20px;
+   padding: 80px 0 20px 0;
+}
+
+.main-product-card img{
+   padding: 80px 0px 20px 0px;
+
+}
+
+ion-card-content {
+   text-align: left;
+   margin-top: -50px;
+}
+
+ion-card-title {
+   font-size: 14px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: #fff;
+   font-weight: 200;
+  //  text-align:center;
+}
+
+ion-card-subtitle {
+   font-size: 8px;
+   font-family: Montserrat_Regular;
+   font-weight: 200;
+   color: #cfcfcf;
+   padding-top: 10px;
+   // padding-bottom: 20px;
+}
+
+ion-item{
+   --background: transparent;
+   text-align: left;
+   margin-left: 0;
+   --padding-start:0px;
+   -webkit-padding-start: 0;
+   --min-height:0;
+   width: 60px !important;
+
+   ion-icon{
+       margin-top: 0;
+       margin-bottom: 0;
+       padding:0px;
+       font-size: 13px;
+       margin-inline: 0 2px;
+   }
+}
+
+.time-icon{
+   padding-top: 6px;
 }
